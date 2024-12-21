@@ -1,6 +1,9 @@
 import { useState } from "react";
 import StatCard from "../components/StatCard";
 import { DollarSign, Percent, PhoneCall, ShoppingCart } from "lucide-react";
+import InsightsChart from "../components/InsightsChart";
+import ComparisonChart from "../components/ConparisonChart";
+import Forecast from "../components/Forecast";
 
 const Dashboard = () => {
   const [selectedPeriod, setSelectedPeriod] = useState("7days");
@@ -73,7 +76,7 @@ const Dashboard = () => {
       </div>
 
       {/* Insights Section */}
-      {/* <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
+      <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
         <h2 className="text-lg font-semibold mb-6">Insights</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2">
@@ -84,7 +87,7 @@ const Dashboard = () => {
             <Forecast />
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Orders Section */}
       {/* <div>
