@@ -4,6 +4,7 @@ import { DollarSign, Percent, PhoneCall, ShoppingCart } from "lucide-react";
 import InsightsChart from "../components/InsightsChart";
 import ComparisonChart from "../components/ConparisonChart";
 import Forecast from "../components/Forecast";
+import OrdersTable from "../components/OrdersTable";
 
 const Dashboard = () => {
   const [selectedPeriod, setSelectedPeriod] = useState("7days");
@@ -90,10 +91,10 @@ const Dashboard = () => {
       </div>
 
       {/* Orders Section */}
-      {/* <div>
+      <div>
         <h2 className="text-lg font-semibold mb-4">Orders</h2>
         <OrdersTable orders={ordersData} />
-      </div> */}
+      </div>
     </div>
   );
 };
